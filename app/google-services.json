@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "335752613357",
+    "firebase_url": "https://profit-8e354-default-rtdb.firebaseio.com",
+    "project_id": "profit-8e354",
+    "storage_bucket": "profit-8e354.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335752613357:android:8611ea8414d7ad12db2be4",
+        "android_client_info": {
+          "package_name": "com.harsh.profit.fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335752613357-468e40ibpamav264nojatrfngbffrdvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.harsh.profit.fitness",
+            "certificate_hash": "5497b9eda9044b44e2d5aa57f205d8d5f8a3858c"
+          }
+        },
+        {
+          "client_id": "335752613357-b00fopgqo43mrmss115hsb9j17hajrjr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAba-XLPoG_4nNI0nYdLl_lyCdh7tvO6xI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335752613357-b00fopgqo43mrmss115hsb9j17hajrjr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

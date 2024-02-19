@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.harsh.profit.fitness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_yoga"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:name="androidx.multidex.MultiDexApplication">
+        <!-- Youtube -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!-- Facebook-->
+        <meta-data
+            tools:replace="android:value"
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity android:name="com.harsh.profit.fitness.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.harsh.profit.fitness.MainActivity" />
+        <activity android:name="com.harsh.profit.fitness.ChartActivity"/>
+        <activity android:name="com.harsh.profit.fitness.OverviewActivity" android:label="Overview" />
+        <activity android:name="com.harsh.profit.fitness.FoodSummaryActivity" android:label="Food Summary" />
+        <activity android:name="com.harsh.profit.fitness.AppIntroActivity" android:label="AppIntro" />
+        <activity android:name="com.harsh.profit.fitness.EnterInfoActivity" android:label="Enter Info" />
+        <activity android:name="com.harsh.profit.fitness.Activity_ChangeGoal" android:label="Change Goals"/>
+        <activity android:name="com.harsh.profit.fitness.SetGoalActivity" android:label="Set Goal" />
+        <activity android:name="com.harsh.profit.fitness.Food_RecyclerFrag_Main"
+            android:label="Add Food"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.harsh.profit.fitness.MainActivity">
+        </activity>
+        <activity android:name="com.harsh.profit.fitness.AccountActivity" android:label="Settings" />
+        <service
+            android:name="com.harsh.profit.fitness.GeocodeAddressIntentService"
+            android:exported="false"/>
+    </application>
+
+</manifest>
